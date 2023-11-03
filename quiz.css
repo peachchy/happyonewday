@@ -1,0 +1,26 @@
+body {
+    background-color: #f4f4f4;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+#quiz-container {
+    background-color: #fff;
+    padding: 30px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    #quiz-container {
+        padding: 10px;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
