@@ -1,77 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 이펙트06</title>
-    <script src="quiz.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/quiz.css">
-    <style>
-
-    </style>
+    <title>퀴즈 웹사이트</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header id="header">
-        <h1><a href="../javascript14.html">Quiz</a> <em>객관식(슬라이드) 확인하기(여러문제) 유형</em></h1>
-        <ul>
-            <li><a href="quizEffect01.html">1</a></li>
-            <li><a href="quizEffect02.html">2</a></li>
-            <li><a href="quizEffect03.html">3</a></li>
-            <li><a href="quizEffect04.html">4</a></li>
-            <li><a href="quizEffect05.html">5</a></li>
-            <li><a href="webd05-1.html">5-1</a></li>
-            <li class="active"><a href="quizEffect06.html">6</a></li>
-        </ul>
-    </header>
-    <!-- //header -->
-
-    <main id="main">
-        <div class="quiz__wrap">
-            <div class="quiz">
-                <div class="quiz__header">
-                    <h2 class="quiz__title"></h2>
-                </div>
-                <div class="quiz__main ">
-                    <div class="quiz__question"></div>
-                    <h4></h4>
-                    <div class="quiz__view">
-                        <div class="dog__wrap">
-                            <img class="dog-gif" src="correct.gif" alt="정답">
-                            <div class="true">😇정답입니다!</div>
-                            <div class="false">😈틀렸습니다!</div>
-                            <div class="card-container">
-                                <div class="dog">
-                                    <div class="head">
-                                        <div class="ears"></div>
-                                        <div class="face"></div>
-                                        <div class="eyes">
-                                            <div class="teardrop"></div>
-                                        </div>
-                                        <div class="nose"></div>
-                                        <div class="mouth">
-                                            <div class="tongue"></div>
-                                        </div>
-                                        <div class="chin"></div>
-                                    </div>
-                                    <div class="body">
-                                        <div class="tail"></div>
-                                        <div class="legs"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz__choice"></div>
-                    <div class="quiz__answer">
-                        <button class="next">다음 문제</button>
-                    </div>
-                    <div class="quiz__desc"></div>
-                    <div class="quiz__info"><b>??점</b></div>
-                    <div class="quiz__check">💛 총 <span>❔</span>개 💛</div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- //main -->
+    <div id="quiz-container">
+        <div id="quiz"></div>
+    </div>
+    <button id="previous">이전 문제</button>
+    <button id="next">다음 문제</button>
+    <button id="submit">제출</button>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
